@@ -45,15 +45,3 @@ One potential shortcoming is when it deals with the challenge video, espectially
 A possible improvement would be to use certain methods to pick out the edges representing the lane line. I tried to use k-means (with TensorFlow packet) to find the group of lines with the least variance, however it took too much time to computer. For a 10s video, it took arond 10 mins to compute
 
 Another potential improvement could be to keep global variables to store lines information (slope and ending points), then when the result of computing a frame changes too much from the last one, then use weight to minimize the change. This is because, I think, the change of the slope or the position of the line are based on only two factors, the speed of the car, and whether the car is in a curve lane.
-
-
-
-
-
-
-
-
-
-
-
-res
